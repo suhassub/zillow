@@ -1,0 +1,514 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suhas.us.csci571homework9.TableInfo">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="415dp"
+    android:id="@+id/scroll">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moredetails"
+                android:id="@+id/textView5"
+                android:padding="8dip"
+                android:maxWidth="10dp" />
+
+            <Button
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:id="@+id/button"
+                android:background="@drawable/facebookshare"
+                android:padding="8dp"
+                android:width="50dp" />
+
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/homelink"
+                android:linksClickable="true"
+                android:padding="8dip"
+                android:layout_span="2" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/propertytype"
+                android:id="@+id/propertytype"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/duplex"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yearBuilt"
+                android:id="@+id/yearBuilt"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/year"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lotsize"
+                android:id="@+id/lotsize"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/lotsizevalue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finishedarea"
+                android:id="@+id/finishedarea"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/finishedareavalue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bathroom"
+                android:id="@+id/bathroom"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/bathroomvalue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bedroom"
+                android:id="@+id/bedroom"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/bedroomvalue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taxyear"
+                android:id="@+id/taxyear"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/taxyearvalue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/taxassess"
+                android:id="@+id/taxassessment"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/taxassessmentValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+
+          <TableRow android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bb"
+                android:layout_column="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lastsold"
+                    android:id="@+id/lastsold"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:padding="8dip"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/lastsoldValue"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingRight="16dip"
+                    android:gravity="right" />
+            </TableRow>
+
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lastsolddate"
+                android:id="@+id/LastSoldDate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/LastSoldDateValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/waterBlue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zestimate"
+                android:id="@+id/zestimate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="8dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/zestimateValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/waterBlue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/zestimate2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="8dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirtydaysoverall"
+                android:id="@+id/thirtydays"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/thirtydaysValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingRight="16dip"
+                android:gravity="right" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/AllTimePropertyRange"
+                android:id="@+id/allTimeProperty"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/allTimePropertyValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/RentZestimate"
+                android:id="@+id/rentZestimate"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="8dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/rentZestimateValuelue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/rentZestimate2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="8dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"/>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bb">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirtydaysrentchange"
+                android:id="@+id/thirtydaysrent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/thirtydaysrentValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bw">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alltimerentrange"
+                android:id="@+id/allTimeRent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="8dip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/allTimeRentValue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="right"
+                android:paddingRight="16dip" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u00a9Zillow,Inc.2006-2014"
+        android:layout_below="@id/scroll"
+        android:id="@+id/footer1"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footer1"
+        android:id="@+id/footer2"
+        android:layout_gravity="center"
+        android:linksClickable="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/footer2"
+        android:id="@+id/footer3"
+        android:layout_gravity="center"
+        android:linksClickable="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

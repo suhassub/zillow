@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suhas.us.csci571homework9" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zillow"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.suhas.us.csci571homework9.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.suhas.us.csci571homework9.zillowresult"
+            android:label="@string/title_activity_zillowresult" >
+        </activity>
+        <activity
+            android:name="com.suhas.us.csci571homework9.ChartsInfo"
+            android:label="@string/title_activity_charts_info" >
+        </activity>
+        <activity
+            android:name="com.suhas.us.csci571homework9.TableInfo"
+            android:label="@string/title_activity_table_info" >
+        </activity>
+    </application>
+
+</manifest>
